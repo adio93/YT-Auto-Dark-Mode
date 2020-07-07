@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         YouTube Auto Dark Switch
-// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @author       Adrian Urbaniak
 // @match        https://www.youtube.com/*
 // @license MIT
+// @description:en Script automatically setting up dark mode on YT at specified time.
+// @namespace https://greasyfork.org/users/664257
 // ==/UserScript==
 
 
@@ -24,6 +25,4 @@ document.getElementsByTagName('html')[0].removeAttribute('dark');
 }
 setInterval(check,a*60000);
 }
-
-
 check();
